@@ -31,13 +31,13 @@
                         <a class="nav-link" href="#apropos">À propos de moi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#competences">Compétences</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#projets">Projets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#formations">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Expériences</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -48,9 +48,24 @@
                             Mes activités extra-professionnelles
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pompier Volontaire</a></li>
-                            <li><a class="dropdown-item" href="#">Montage Vidéo</a></li>
-                            <li><a class="dropdown-item" href="#">Peloton Motocycliste Sécurisation</a></li>
+                            <li>
+                                <button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#modalPompier">
+                                    Pompier Volontaire
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#modalMontageVideo">
+                                    Montage Vidéo
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#modalPeloton">
+                                    Peloton Motocycliste Sécurisation
+                                </button>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -58,14 +73,14 @@
         </div>
     </nav>
 
-    <div id="accueil" class="container mt-5">
+    <div id="accueil" class="container mt-5 fade-section">
         <h1>Bienvenue sur mon portfolio</h1>
         <p>À la recherche d'un poste.</p>
 
-       
+
     </div>
 
-    <section id="apropos" class="container my-5">
+    <section id="apropos" class="container my-5 fade-section">
         <div class="card border-0 shadow-lg">
             <div class="card-body p-4 p-md-5">
                 <div class="row align-items-center g-4">
@@ -84,55 +99,27 @@
                             professionnel.
                         </p>
                         <p class="card-text text-secondary mb-4">
-                            Sérieuse, organisée et impliquée, j'aime comprendre les besoins, trouver des solutions utiles
+                            Sérieuse, organisée et impliquée, j'aime comprendre les besoins, trouver des solutions
+                            utiles
                             et
                             progresser grâce au travail d'équipe.
                         </p>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge rounded-pill text-bg-light border">Informatique</span>
                             <span class="badge rounded-pill text-bg-light border">Développement</span>
-                            <span class="badge rounded-pill text-bg-light border">Apprentissage</span>
-                            <span class="badge rounded-pill text-bg-light border">Travail d'équipe</span>
+                            <span class="badge rounded-pill soft-skill-badge">Apprentissage</span>
+                            <span class="badge rounded-pill soft-skill-badge">Travail d'équipe</span>
                         </div>
                     </div>
                 </div>
+
+               
             </div>
         </div>
     </section>
 
 
-    <section id="competences" class="container my-5">
-        <div class="card border-0 shadow-lg">
-            <div class="card-body p-4 p-md-5">
-                <div class="row align-items-center g-4">
-                  
-                    <div class="col-md-9">
-                        <span class="badge text-bg-dark mb-3">Compétences</span>
-                        <h2 class="card-title mb-3">Jeune professionnelle en informatique, motivée et curieuse</h2>
-                        <p class="card-text text-secondary">
-                            Je suis à la recherche d'un poste qui me permettra de développer mes compétences en
-                            informatique,
-                            de participer à des projets concrets et de continuer à apprendre dans un environnement
-                            professionnel.
-                        </p>
-                        <p class="card-text text-secondary mb-4">
-                            Sérieuse, organisée et impliquée, j'aime comprendre les besoins, trouver des solutions utiles
-                            et
-                            progresser grâce au travail d'équipe.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge rounded-pill text-bg-light border">Informatique</span>
-                            <span class="badge rounded-pill text-bg-light border">Développement</span>
-                            <span class="badge rounded-pill text-bg-light border">Apprentissage</span>
-                            <span class="badge rounded-pill text-bg-light border">Travail d'équipe</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projets" class="container my-5">
+    <section id="projets" class="container my-5 fade-section">
         <div class="card border-0 shadow-lg">
             <div class="card-body p-4 p-md-5">
                 <span class="badge text-bg-dark mb-3">Projets</span>
@@ -148,13 +135,22 @@
                             <img src="../images/projet-1.jpg" class="card-img-top" alt="Aperçu du projet 1"
                                 style="height: 180px; object-fit: cover;">
                             <div class="card-body d-flex flex-column">
-                                <h3 class="h5 card-title">Projet 1</h3>
+                                <h3 class="h5 card-title">Doodle Like</h3>
                                 <p class="card-text text-secondary">
-                                    Courte description du projet, des technologies utilisées et de ce qu'il permet de
-                                    faire.
-                                </p>
-                                <a href="https://github.com" class="btn btn-dark mt-auto">Voir sur GitHub</a>
+                                    Le projet a été réalisé en binôme dans le cadre d'un projet universitaire. 
                             </div>
+                              <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill text-bg-light border">PHP</span>
+                            <span class="badge rounded-pill text-bg-light border">CodeIgniter</span>
+                            <span class="badge rounded-pill text-bg-light border">PHPMyAdmin</span>
+                            <span class="badge rounded-pill text-bg-light border">SQL</span>
+
+
+                            <span class="badge rounded-pill soft-skill-badge">Apprentissage</span>
+                            <span class="badge rounded-pill soft-skill-badge">Organisation</span>
+
+                            <span class="badge rounded-pill soft-skill-badge">Travail d'équipe</span>
+                        </div>
                         </div>
                     </div>
 
@@ -163,12 +159,12 @@
                             <img src="../images/projet-2.jpg" class="card-img-top" alt="Aperçu du projet 2"
                                 style="height: 180px; object-fit: cover;">
                             <div class="card-body d-flex flex-column">
-                                <h3 class="h5 card-title">Projet 2</h3>
+                                <h3 class="h5 card-title">Same Game</h3>
                                 <p class="card-text text-secondary">
                                     Courte description du projet, de son objectif et des compétences développées pendant
                                     sa réalisation.
                                 </p>
-                                <a href="https://github.com" class="btn btn-dark mt-auto">Voir sur GitHub</a>
+                                <a href="https://github.com/shanalfe/SameGame" class="btn btn-dark mt-auto">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +188,7 @@
         </div>
     </section>
 
-    <section id="formations" class="container my-5">
+    <section id="formations" class="container my-5 fade-section">
         <div class="card border-0 shadow-lg">
             <div class="card-body p-4 p-md-5">
                 <span class="badge text-bg-dark mb-3">Formations</span>
@@ -209,8 +205,7 @@
                                 </div>
                                 <p class="card-text text-secondary mb-1">Évry - MASTER MIAGE</p>
                                 <p class="card-text text-secondary mb-0">
-                                    Décris ici les matières principales, les projets réalisés ou les compétences
-                                    développées pendant cette formation.
+                                   "Le Master MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) est une formation pluridisciplinaire en sciences du numérique et du management visant principalement à former des experts dans les métiers de l’ingénierie des données et du pilotage des systèmes d’information"
                                 </p>
                             </div>
                         </div>
@@ -221,13 +216,12 @@
                         <div class="card border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
-                                    <h3 class="h5 card-title mb-0">Nom de l'école ou formation</h3>
-                                    <span class="badge text-bg-light border">2022 - 2024</span>
+                                    <h3 class="h5 card-title mb-0">Université Paris-Est-Créteil</h3>
+                                    <span class="badge text-bg-light border">2019 - 2022</span>
                                 </div>
-                                <p class="card-text text-secondary mb-1">Ville - Diplôme obtenu</p>
+                                <p class="card-text text-secondary mb-1">Fontainebleau - DUT Informatique</p>
                                 <p class="card-text text-secondary mb-0">
-                                    Ajoute ici une courte description de ton parcours, de tes spécialités ou de tes
-                                    résultats importants.
+                                    
                                 </p>
                             </div>
                         </div>
@@ -238,13 +232,12 @@
                         <div class="card border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
-                                    <h3 class="h5 card-title mb-0">Nom de l'école ou formation</h3>
-                                    <span class="badge text-bg-light border">2020 - 2022</span>
+                                    <h3 class="h5 card-title mb-0">Lycée Saint-Joseph</h3>
+                                    <span class="badge text-bg-light border">2018 - 2019</span>
                                 </div>
-                                <p class="card-text text-secondary mb-1">Ville - Diplôme obtenu</p>
+                                <p class="card-text text-secondary mb-1">Château-Thierry - Baccalauréat Scientifique</p>
                                 <p class="card-text text-secondary mb-0">
-                                    Présente en quelques mots ce que cette formation t'a apporté et ce que tu y as
-                                    appris.
+                                   
                                 </p>
                             </div>
                         </div>
@@ -254,7 +247,92 @@
         </div>
     </section>
 
-    <section id="contact" class="container my-5">
+    <section id="experiences" class="container my-5 fade-section">
+        <div class="card border-0 shadow-lg">
+            <div class="card-body p-4 p-md-5">
+                <span class="badge text-bg-dark mb-3">Expériences professionnelles</span>
+                <h2 class="card-title mb-4">Mon parcours professionnelle</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                                    <h3 class="h5 card-title mb-0">Kappa Santé</h3>
+                                    <span class="badge text-bg-light border">2022 - 2025</span>
+                                </div>
+                                <p class="card-text text-secondary mb-2">Développeur Java - Paris (75)</p>
+                                <p class="card-text text-secondary">
+                                <ul>
+                                    <li>Développement et maintenance d'eCRFs en appliquant les Bonnes Pratiques de
+                                        développement</li>
+                                    <li>Tracer les évolutions / modifications apportées sur les applications en
+                                        utilisant l'outil GIT.</li>
+                                    <li>Mise en place de solutions pour les promoteurs</li>
+                                    <li>Échange avec les différents acteurs du projet (DataManager, Chef de projets)
+                                    </li>
+                                    <li>Rédaction de procédures</li>
+                                    <li>Réalisation de tests</li>
+                                </ul>
+
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill text-bg-light border">Java</span>
+                                    <span class="badge rounded-pill text-bg-light border">TomCat</span>
+                                    <span class="badge rounded-pill text-bg-light border">PrimeFaces</span>
+                                    <span class="badge rounded-pill text-bg-light border">PostgreSQL</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                                    <h3 class="h5 card-title mb-0">Communauté d'Agglomération de la Région de
+                                        Château-Thierry</h3>
+                                    <span class="badge text-bg-light border">2021 - 2022</span>
+                                </div>
+                                <p class="card-text text-secondary mb-2">Technicien support - Château-Thierry (02)</p>
+                                <p class="card-text text-secondary">
+
+                                <ul>
+                                    <li>Développement d'applications en PHP pour nos services</li>
+                                    <li>Communication et sensibilisation des risques informatiques auprès de nos agents</li>
+                                    <li>Service Après-Vente auprès des prestataires / vendeurs</li>
+                                    <li>Modification et maintenance du réseau informatique sur l'ensemble des sites</li>
+                                    <li>Réalisation d'inventaire matériel</li>
+                                    <li>Résolutions de tickets</li>
+                                    <li>Rédaction de procédures de nos outils informatiques</li>
+                                </ul>
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill text-bg-light border">GLPI</span>
+                                    <span class="badge rounded-pill text-bg-light border">PHP</span>
+                                    <span class="badge rounded-pill text-bg-light border">minw</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                     <div class="text-center mt-4">
+                    <a href="https://www.linkedin.com/in/shana-lefevre/details/experience/" class="btn btn-dark" target="_blank"
+                        rel="noopener noreferrer">
+                        Voir mes autres expériences sur LinkedIn
+                    </a>
+                </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5 fade-section">
         <div class="card border-0 shadow-lg">
             <div class="card-body p-4 p-md-5">
                 <span class="badge text-bg-dark mb-3">Contact</span>
@@ -268,8 +346,8 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label for="nom" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="nom" name="nom"
-                                placeholder="Votre nom" required>
+                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom"
+                                required>
                         </div>
 
                         <div class="col-md-6">
@@ -301,16 +379,92 @@
 
 
     <a href="https://github.com" class="btn btn-primary">
-            Mon GitHub
-        </a>
+        Mon GitHub
+    </a>
 
     <a href="#accueil" id="retour-haut"
-        class="btn btn-dark rounded-circle position-fixed bottom-0 end-0 m-4 shadow d-none"
-        aria-label="Retour en haut">
+        class="btn btn-dark rounded-circle position-fixed bottom-0 end-0 m-4 shadow d-none" aria-label="Retour en haut">
         ↑
     </a>
 
+    <div class="modal fade" id="modalPompier" tabindex="-1" aria-labelledby="modalPompierTitre" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="modalPompierTitre">Pompier Volontaire</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">
+                        Engagement volontaire qui m'a permis de développer mon sens des responsabilités, mon sang-froid,
+                        mon esprit d'équipe et ma capacité à agir efficacement dans des situations exigeantes.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill soft-skill-badge">Engagement</span>
+                        <span class="badge rounded-pill soft-skill-badge">Rigueur</span>
+                        <span class="badge rounded-pill soft-skill-badge">Esprit d'équipe</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMontageVideo" tabindex="-1" aria-labelledby="modalMontageVideoTitre"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="modalMontageVideoTitre">Montage Vidéo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">
+                        Activité créative autour du montage vidéo : sélection des séquences, rythme, transitions,
+                        habillage visuel et mise en valeur d'un message ou d'un événement.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill soft-skill-badge">Créativité</span>
+                        <span class="badge rounded-pill text-bg-light border">Montage</span>
+                        <span class="badge rounded-pill soft-skill-badge">Communication</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPeloton" tabindex="-1" aria-labelledby="modalPelotonTitre" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="modalPelotonTitre">Peloton Motocycliste Sécurisation</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">
+                        Participation à des missions de sécurisation et d'encadrement, demandant concentration,
+                        anticipation, respect des consignes et coordination avec les autres membres de l'équipe.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill soft-skill-badge">Sécurisation</span>
+                        <span class="badge rounded-pill soft-skill-badge">Coordination</span>
+                        <span class="badge rounded-pill soft-skill-badge">Responsabilité</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./script/flecheHaut.js"></script>
+    <script src="./script/animationBlocs.js"></script>
 
 </body>
 
